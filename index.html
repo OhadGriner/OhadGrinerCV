@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohad's CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showTab(tabName) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(tabName).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('home');
+        });
+    </script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('about')">About</a></li>
+            <li><a href="#" onclick="showTab('experience')">Experience</a></li>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <header>
+                <h1>Ohad Griner</h1>
+                <h2>Software Engineer | Robotics Specialist | Team Leader</h2>
+            </header>
+            <p>I'm Ohad Griner, an Experienced software engineer with a background in robotics, team leadership, and software engineering solutions.</p>
+            <p>I have a BS.c in computer science from the Open University</p>
+            <img src="assets/Ohad_Griner_photo.jpg" alt="Profile Picture" class="profile-picture">
+        </section>
+
+        <section id="about" style="display: none;">
+            <div class="section-title">About</div>
+            <ul>
+                <p>Passionate software engineer with experience in robotics, focusing on innovation and teamwork.</p>
+                <li>Programming: Python, Linux</li>
+                <li>Frameworks: ROS2</li>
+                <li>Leadership: Team Management, Agile Development</li>
+            </ul>
+        </section>
+
+        <section id="experience" style="display: none;">
+            <div class="section-title">Experience</div>
+            <ul>
+                <li><strong>Team Leader, Robotics Software</strong> - (2024-Present)
+                    <ul>
+                        <li>Led a team of developers working on autonomous systems.</li>
+                        <li>Designed and implemented ROS2-based solutions for projects.</li>
+                    </ul>
+                </li>
+                <li><strong>Software Engineer, Robotics Development</strong> – (2021-2024)
+                    <ul>
+                        <li>Providing software solutions to robotics projects.</li>
+                    </ul>
+                </li>
+                <li><strong>BSc, Computer Science. The Open University</strong> – (2017-2021)</li>
+            </ul>
+        </section>
+
+        <section id="about" style="display: none;">
+            <div class="section-title">About</div>
+            <p>Passionate software engineer with experience in robotics, focusing on innovation and teamwork.</p>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <div class="section-title">Contact</div>
+            <p>Email: ohad.griner@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ohad-griner-696a19342" target="_blank">my_linkedin</a></p>
+        </section>
+    </div>
+</body>
+</html>
