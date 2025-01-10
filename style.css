@@ -32,3 +32,7 @@ nav ul li a:hover {
     width: 50%;
     margin-left: auto;
 }
+
+body {
+    font-family: 'Assistant', sans-serif;
+  }
