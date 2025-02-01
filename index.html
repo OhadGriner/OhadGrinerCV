@@ -3,78 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohad's CV</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function showTab(tabName) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(tabName).style.display = 'block';
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showTab('home');
-        });
-    </script>
 </head>
 <body>
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="#home" onclick="showTab('home')">Home</a></li>
-            <li><a href="#about" onclick="showTab('about')">About</a></li>
-            <li><a href="#experince" onclick="showTab('experience')">Experience</a></li>
-            <li><a href="#contact" onclick="showTab('contact')">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <header>
-                <h1>Ohad Griner</h1>
-                <h2>Software Engineer | Robotics Specialist | Team Leader</h2>
-            </header>
-            <p>I'm Ohad Griner, an Experienced software engineer with a background in robotics, team leadership, and software engineering solutions.</p>
-            <p>I have a BS.c in computer science from the Open University</p>
-            <img src="assets/Ohad_Griner_photo.jpg" alt="Profile Picture" class="profile-picture">
-        </section>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-        <section id="about" style="display: none;">
-            <div class="section-title">About</div>
-            <ul>
-                <p>Passionate software engineer with experience in robotics, focusing on innovation and teamwork.</p>
-                <li>Programming: Python, Linux</li>
-                <li>Frameworks: ROS2</li>
-                <li>Leadership: Team Management, Agile Development</li>
-            </ul>
-        </section>
+    <div id="home" class="container">
+        <div class="intro">
+            <img src="assets/Ohad_Griner_photo.jpg" alt="My Photo">
+            <div class="text-near-photo">
+                <p >Hello! I'm Ohad Griner, an Experienced software engineer with a background in robotics, team leadership, and software engineering solutions.</p>
+            </div>
+            
+        </div>
+    </div>
 
-        <section id="experience" style="display: none;">
-            <div class="section-title">Experience</div>
-            <ul>
-                <li><strong>Team Leader, Robotics Software</strong> - (2024-Present)
-                    <ul>
-                        <li>Led a team of developers working on autonomous systems.</li>
-                        <li>Designed and implemented ROS2-based solutions for projects.</li>
-                    </ul>
-                </li>
-                <li><strong>Software Engineer, Robotics Development</strong> – (2021-2024)
-                    <ul>
-                        <li>Providing software solutions to robotics projects.</li>
-                    </ul>
-                </li>
-                <li><strong>BSc, Computer Science. The Open University</strong> – (2017-2021)</li>
-            </ul>
+    <div id="about" class="container">
+        <section>
+            <h2>About</h2>
+            <p>I'm Ohad Griner. I am <span id="age"></span> years old, I hold a BSc of computer science from the Open University.</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <script>
+                function calculateAge(birthDate) {
+                    const today = new Date();
+                    let age = today.getFullYear() - birthDate.getFullYear();
+                    const monthDiff = today.getMonth() - birthDate.getMonth();
+                    const dayDiff = today.getDate() - birthDate.getDate();
+                    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+                        age--;
+                    }
+                    return age;
+                }
+                const birthDate = new Date(2001, 10, 10);
+                document.getElementById("age").innerText = calculateAge(birthDate);
+            </script>
+            
         </section>
+    </div>
 
-        <section id="about" style="display: none;">
-            <div class="section-title">About</div>
-            <p>Passionate software engineer with experience in robotics, focusing on innovation and teamwork.</p>
+    <div id="experience" class="container">
+        <section>
+            <h2>Experience</h2>
+            <p>TBD</p>
         </section>
+    </div>
 
-        <section id="contact" style="display: none;">
-            <div class="section-title">Contact</div>
-            <p>Email: ohad.griner@gmail.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ohad-griner-696a19342" target="_blank">my_linkedin</a></p>
+    <div id="contact" class="container">
+        <section>
+            <h2>Contact</h2>
+            <p>Include your preferred contact information or a link to your LinkedIn profile.</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            <p>Bla</p>
+            
         </section>
     </div>
 </body>

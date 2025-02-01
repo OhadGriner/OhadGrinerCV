@@ -1,39 +1,72 @@
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    background-color: #333;
-}
-nav ul li {
-    flex-grow: 1;
-    text-align: center;
-}
-nav ul li a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-.profile-picture {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-
-
-}
-
-.nav-bar{
-    width: 50%;
-    margin-left: auto;
-}
-
 body {
-    font-family: 'Assistant', sans-serif;
-    background-color:azure;
-  }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+ 
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.text-near-photo{
+    flex: 1;
+    font-size: 25px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+ 
+.intro img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+} 
+
+
+.intro{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
